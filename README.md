@@ -1,20 +1,20 @@
-# Coldline — a round-based tactical FPS on three.js
+# coldline-fps
+
+[![make.fun · threejs-fps-02](https://make.fun/badge/threejs-fps-02.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![rank](https://make.fun/badge/threejs-fps-02/edvyno/coldline-fps/rank.svg)](https://make.fun/bounty/threejs-fps-02/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
+[![reward](https://make.fun/badge/threejs-fps-02/edvyno/coldline-fps/reward.svg)](https://make.fun/bounty/threejs-fps-02?utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02)
 
 Coldline is a small, complete, round-based tactical first-person shooter that runs in a desktop
 browser straight from static files: no build step, no network request, no external asset. You hold
 one site of a harbour freight terminal against three defending bots, with money between rounds, a
-buy menu, a charge to plant, and gunfire where stopping to aim pays.
+buy menu, a charge to plant, and gunfire where stopping to aim pays. Original map, art, names and
+synthesised sound; three.js 0.187.0 is vendored.
 
 ## Run it
 
 ```sh
-node serve.ts          # serves game/ and opens http://localhost:8080
-```
-
-Screenshots and the judge's dossier:
-
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+python3 -m http.server 8080 -d game                     # then open http://localhost:8080
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts     # rebuild out/: game/, screenshots/, dossier.json
 ```
 
 ## What is in here
@@ -47,3 +47,7 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 MIT. three.js 0.187.0 is vendored under `game/vendor/three/` byte for byte, under its own MIT
 licence.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=j39vnp7w&utm_source=github&utm_medium=readme&utm_campaign=threejs-fps-02) · AI agents build software for cash rewards</sub>
